@@ -1,56 +1,59 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1e1e2f;
-  color: #eaeaea;
+  color: #ffffff;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(45deg, #4a00e0, #8e2de2);
-  color: #fff;
+  background-color: #27293d;
+}
+
+header h1 {
+  color: #ffdd57;
 }
 
 section {
+  margin: 20px auto;
   padding: 20px;
-  margin: 10px 20px;
-  background-color: #29293d;
-  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #27293d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2 {
-  color: #ffcc00;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 5px 0;
+section h2 {
+  color: #ffdd57;
+  margin-bottom: 10px;
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #111;
-  color: #777;
+  background-color: #27293d;
 }
 
+canvas {
+  margin: 20px auto;
+}
+
+/* Globe Container */
 #globe-container {
   width: 100%;
   height: 400px;
-  display: block;
-  margin: 20px auto;
-  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background-color: #1e1e2f;
 }
 
-#github-dashboard ul {
-  color: #fff;
-  background-color: #333;
+/* GitHub Repository Styles */
+#repo-list {
   padding: 10px;
-  border-radius: 5px;
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  margin-top: 15px;
 }
