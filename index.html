@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://unpkg.com/three-globe"></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raja Gopal S Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Language Dashboard -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <h1>Raja Gopal S Portfolio</h1>
-    <p>Welcome to my personal portfolio showcasing my projects, skills, and achievements!</p>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Raja Gopal S - Graduate in CSE, Aspiring Data Scientist</p>
   </header>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate developer skilled in creating efficient and scalable solutions. Here you will find details about my education, skills, and projects.</p>
+    <p>I am a recent graduate in Computer Science and Engineering with a keen interest in AI, Machine Learning, and Data Science.</p>
   </section>
 
-  <!-- Globe Visualization -->
-  <section id="globe-section">
-    <h2>Interactive Globe</h2>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python: Numpy, Pandas, Scikit-learn, PyTorch</li>
+      <li>Data Visualization: Matplotlib, Power BI</li>
+      <li>Database: MySQL</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Medical Image Captioning:</strong>
+        Using GRU and Attention strategies to extract findings from X-rays.
+      </li>
+      <li>
+        <strong>World GDP Prediction:</strong>
+        Machine learning model for global GDP forecasting.
+      </li>
+      <li>
+        <strong>Snake Game:</strong>
+        Implemented with Reinforcement Learning (Q-Learning).
+      </li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Data Science (Besant Technologies, 07/11/2024)</li>
+      <li>Data Science and Analytics (Nasscom, 09/03/2024)</li>
+      <li>Artificial Intelligence (Immensphere, 09/06/2023)</li>
+      <li>Python (GUVI, 12/08/2023)</li>
+    </ul>
+  </section>
+
+  <section id="globe">
+    <h2>Languages Dashboard</h2>
     <div id="globe-container"></div>
   </section>
 
-  <!-- Language Dashboard -->
-  <section id="github-dashboard">
-    <h2>Languages Dashboard</h2>
-    <canvas id="languageChart" width="400" height="200"></canvas>
-    <p id="github-dashboard-error" style="color: red;"></p>
-  </section>
-
-  <!-- GitHub Repository Data -->
-  <section id="github-repos">
+  <section id="github-stats">
     <h2>GitHub Repository Data</h2>
-    <div id="repo-list"></div>
+    <div id="github-dashboard">
+      <ul id="github-languages"></ul>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2024 Raja Gopal S. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
